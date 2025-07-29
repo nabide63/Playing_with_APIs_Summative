@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CycleCare - Period Tracking</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <h1>CycleCare <i class="fas fa-venus"></i></h1>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="tracking.html" class="nav-link active">Period Tracking</a></li>
+          <li><a href="stores.html" class="nav-link">Stores</a></li>
+        </ul>
+      </nav>
+      <div class="user-info">
+        <span id="welcomeMessage">Welcome, Guest!</span>
+        <button id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Log Out</button>
+      </div>
+      <button class="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section id="calendar-section">
+      <h2><i class="fas fa-calendar-alt"></i> Track Your Last Period</h2>
+      <label for="lastPeriod">Select the first day of your last period:</label>
+      <input type="date" id="lastPeriod" max="" />
+      <button id="saveDateBtn">Save Date</button>
+      <button id="clearDateBtn">Clear Date</button>
+      <p class="saved-message" id="dateSavedMsg">Date saved!</p>
+      <p id="prediction-result"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CycleCare. All rights reserved.</p>
+  </footer>
+
+  <script src="tracking.js"></script>
+</body>
+</html>

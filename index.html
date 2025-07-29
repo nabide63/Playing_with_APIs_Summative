@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CycleCare - Your Period Companion</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <h1>CycleCare <i class="fas fa-venus"></i></h1>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="tracking.html" class="nav-link">Period Tracking</a></li>
+          <li><a href="stores.html" class="nav-link">Stores</a></li>
+        </ul>
+      </nav>
+      <div class="user-info">
+        <span id="welcomeMessage">Welcome, Guest!</span>
+        <button id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Log Out</button>
+      </div>
+      <button class="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section id="user-details-section">
+      <h2><i class="fas fa-user"></i> Your Profile</h2>
+      <div id="user-details">
+        <p><strong>Name:</strong> <span id="user-name">Loading...</span></p>
+        <p><strong>Email:</strong> <span id="user-email">Loading...</span></p>
+        <p><strong>Phone:</strong> <span id="user-phone">Loading...</span></p>
+      </div>
+    </section>
+
+    <section id="symptom-form">
+      <h2><i class="fas fa-heartbeat"></i> Enter Your Symptoms</h2>
+      <form id="periodForm">
+        <label><input type="checkbox" name="symptom" value="cramps" /> Cramps</label>
+        <label><input type="checkbox" name="symptom" value="headache" /> Headache</label>
+        <label><input type="checkbox" name="symptom" value="nausea" /> Nausea</label>
+        <label><input type="checkbox" name="symptom" value="bloating" /> Bloating</label>
+        <label><input type="checkbox" name="symptom" value="fatigue" /> Fatigue</label>
+        <label><input type="checkbox" name="symptom" value="backpain" /> Back Pain</label>
+        <label><input type="checkbox" name="symptom" value="mood" /> Mood Swings</label>
+        <button type="submit"><i class="fas fa-magic"></i> Get Recommendations</button>
+      </form>
+    </section>
+
+    <section id="results">
+      <h2><i class="fas fa-lightbulb"></i> Suggestions for You</h2>
+      <div id="tips"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CycleCare. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

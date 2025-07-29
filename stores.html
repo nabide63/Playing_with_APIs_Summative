@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CycleCare - Stores for Period Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <h1>CycleCare <i class="fas fa-venus"></i></h1>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="tracking.html" class="nav-link">Period Tracking</a></li>
+          <li><a href="stores.html" class="nav-link active">Stores</a></li>
+        </ul>
+      </nav>
+      <div class="user-info">
+        <span id="welcomeMessage">Welcome, Guest!</span>
+        <button id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Log Out</button>
+      </div>
+      <button class="hamburger"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section id="stores-section">
+      <h2><i class="fas fa-shopping-bag"></i> Stores for Period Products in Kigali</h2>
+      <p>Find menstrual products like sanitary pads, tampons, and reusable options at these locations in Kigali.</p>
+      <div id="stores-list"></div>
+      <a href="index.html" class="nav-button"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CycleCare. All rights reserved.</p>
+  </footer>
+
+  <script src="stores.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CycleCare - Log In</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <h1>CycleCare <i class="fas fa-venus"></i></h1>
+    <p>Your Own Personalized Period Companion</p>
+  </header>
+
+  <main>
+    <section id="login-section">
+      <h2><i class="fas fa-sign-in-alt"></i> Log In</h2>
+      <form id="loginForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        
+        <button type="submit"><i class="fas fa-sign-in-alt"></i> Log In</button>
+        <p class="error-message" id="loginError"></p>
+        <p class="success-message" id="loginSuccess"></p>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CycleCare. All rights reserved.</p>
+  </footer>
+
+  <script src="login.js"></script>
+</body>
+</html>
