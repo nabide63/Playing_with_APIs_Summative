@@ -1,6 +1,7 @@
 Playing_with_APIs_Summative
 Summative submission May 2025 trimester
-Overview
+
+*Overview*
 CycleCare is a web-based period tracking application designed for users in Kigali, Rwanda. It allows users to track their menstrual cycles, log symptoms, receive personalized health suggestions, and find local stores for menstrual products. The app features a responsive, pink-themed interface with enhanced navigation and is built using HTML, CSS, and JavaScript with localStorage for data persistence. This application is containerized using Docker, deployed on two Ubuntu-based web servers with Nginx, and balanced using an HAProxy container with a round-robin algorithm. SSL termination is configured on the web servers to ensure secure HTTPS communication.
 Features
 
@@ -10,6 +11,10 @@ Symptom Logging: Log symptoms (e.g., cramps, headache) and receive food, medicat
 Store Listings: View a list of Kigali-based stores with logos and links to purchase menstrual products.
 Responsive Design: Mobile-friendly interface with a hamburger menu, gradient navigation, and smooth animations.
 Pink-Themed UI: Consistent aesthetic with pink accents (#ff69b4, #ff85c1, #fce4ec) and Font Awesome icons.
+
+***Video Demo Link***
+https://youtu.be/k1JuWk67C-k
+
 
 APIs Used
 
